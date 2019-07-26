@@ -8,7 +8,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "ng lint",
-    "e2e": "ng e2e",
+    "e2e": "node e2e/puppeteer.conf.js",
     "deploy": "ng build --prod --base-href 'https://heyayush.github.io/ng-launchpad/' && npx angular-cli-ghpages --no-silent",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -42,11 +42,13 @@
     "@storybook/angular": "^5.1.9",
     "@types/jest": "^24.0.15",
     "@types/node": "~8.9.4",
+    "@types/puppeteer": "^1.19.0",
     "angular-cli-ghpages": "^0.5.3",
     "babel-loader": "^8.0.6",
     "codelyzer": "^5.0.0",
     "jest": "^24.8.0",
     "jest-preset-angular": "^7.1.1",
+    "puppeteer": "^1.19.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
