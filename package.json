@@ -11,7 +11,7 @@
     "lint:fix": "ng lint --fix && npm run lint-css:fix",
     "lint-css": "stylelint \"src/**/*.scss\" \"src/**/*.html\"",
     "lint-css:fix": "stylelint \"src/**/*.scss\" \"src/**/*.html\" --fix",
-    "fmt": "prettier --write ./**/*.ts",
+    "fmt": "prettier --write \"src/**/*.ts\"",
     "e2e": "node e2e/puppeteer.conf.js",
     "deploy": "ng build --prod --base-href 'https://heyayush.github.io/ng-launchpad/' && npx angular-cli-ghpages --no-silent",
     "storybook": "start-storybook -p 6006",
