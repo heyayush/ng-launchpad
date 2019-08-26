@@ -20,6 +20,7 @@
 
 - Take benefit of angular cli to generate required files.  
 - Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Use route based code splitting for eg `ng g module login --module app --route login`
 
 ## Code linting
 
@@ -58,6 +59,28 @@
 1. CI-CD is in place to take care of automatic deployments.
 2. There should not be any linting error or unit test failure for deployment to succeed.
 3. Please check for deployment success tick before merging any pull requests.
+
+## Code Review Guidelines
+
+1. Does the folder structure, file, functions and variables names makes sense.
+2. Use of small pure functions and small isolated reusable components.
+3. SOLID design principles.
+4. Avoid dead code, unnecessary comments or console logs.
+5. Utilize typescript's static type checking.
+6. Go for named import of only the required functions rather than complete module.
+7. Avoid deep nested code.
+8. Don't forget to clear timeout or unsubscribe from subscription.
+9. Clean up the resources on component's destroy.
+10. Easy to read import paths using aliases.
+11. No DOM manipulations from services.
+12. Proper separations of smart and dumb components.
+13. Business logic should only reside in services.
+14. Compulsory error handling.
+15. Exception handling.
+16. Unclear code should be documented.
+17. Can something from view logic be extracted in a pipe.
+18. Can something from service logic be extracted in a lib/util function.
+19. Avoid unnecessary addition of third party libraries.
 
 ## Further help, feedback, suggestion, whom should I contact
 
