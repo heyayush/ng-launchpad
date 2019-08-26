@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "ng lint && npm run lint-css",
     "lint:fix": "ng lint --fix && npm run lint-css:fix",
     "lint-css": "stylelint \"src/**/*.scss\" \"src/**/*.html\"",
